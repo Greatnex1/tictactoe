@@ -404,7 +404,7 @@ function makeComputerMove() {
         whoseTurn = player;
     }
 }
-/*
+
 function checkWin() {
     winner = 0;
 
@@ -488,6 +488,7 @@ function checkWin() {
  
      return winner;
  }
+ /*
  function announceWinner(text) {
     document.getElementById("winText").innerHTML = text;
     document.getElementById("winAnnounce").style.display = "block";
