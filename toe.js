@@ -499,7 +499,7 @@ function askUser(text) {
     document.getElementById("questionText").innerHTML = text;
     document.getElementById("userFeedback").style.display = "block";
 }
-/*
+
 function showOptions() {
     if (player == o) {
         document.getElementById("rx").checked = false;
@@ -546,6 +546,7 @@ function getOptions() {
     }
     document.getElementById("optionsDlg").style.display = "none";
 }
+/*
 
 function closeModal(id) {
     document.getElementById(id).style.display = "none";
