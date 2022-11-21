@@ -546,7 +546,7 @@ function getOptions() {
     }
     document.getElementById("optionsDlg").style.display = "none";
 }
-/*
+
 
 function closeModal(id) {
     document.getElementById(id).style.display = "none";
