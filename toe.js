@@ -494,12 +494,12 @@ function checkWin() {
     document.getElementById("winAnnounce").style.display = "block";
     setTimeout(closeModal, 1400, "winAnnounce");
 }
-/*
+
 function askUser(text) {
     document.getElementById("questionText").innerHTML = text;
     document.getElementById("userFeedback").style.display = "block";
 }
-
+/*
 function showOptions() {
     if (player == o) {
         document.getElementById("rx").checked = false;
