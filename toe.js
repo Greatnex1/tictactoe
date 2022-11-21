@@ -234,7 +234,7 @@ function makePlayerX() {
     document.getElementById("yesBtn").removeEventListener("click", makePlayerX);
     document.getElementById("noBtn").removeEventListener("click", makePlayerO);
 }
-function makePlayerO() {
+function makePlayerO() { 
     player = o;
     computer = x;
     whoseTurn = computer;
@@ -300,7 +300,7 @@ if (ask === true) {
     setTimeout(makeComputerMove, 800);
 }
 }
-/*
+
 function makeComputerMove() {
     // debugger;
     if (gameOver) {
@@ -404,6 +404,7 @@ function makeComputerMove() {
         whoseTurn = player;
     }
 }
+/*
 function checkWin() {
     winner = 0;
 
