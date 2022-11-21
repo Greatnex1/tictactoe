@@ -488,12 +488,13 @@ function checkWin() {
  
      return winner;
  }
- /*
+ 
  function announceWinner(text) {
     document.getElementById("winText").innerHTML = text;
     document.getElementById("winAnnounce").style.display = "block";
     setTimeout(closeModal, 1400, "winAnnounce");
 }
+/*
 function askUser(text) {
     document.getElementById("questionText").innerHTML = text;
     document.getElementById("userFeedback").style.display = "block";
