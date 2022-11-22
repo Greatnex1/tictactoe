@@ -41,14 +41,17 @@ document.onkeypress = function(evt){
         modal.style.display = "none";
     }
 }
-
+window.onclick = function (evt) {
+    var modal = document.getElementsByClassName("modal")[0];
+    if (evt.target === modal) {
+        modal.style.display = "none";
+    }
+};
 //Helper Function
-
 function sumArray(array){
     var sum   = 0, i = 0;
     for (let i = 0; i < array.lengt++; i++) {
         sum += arr[i];
-        
     }
     return  sum;
 }
@@ -117,7 +120,7 @@ Grid.prototype.getRowValues =   function(index){
 }
 Grid.prototype.getRowIndices = function (index){
     if(index !== 0 && index !==1 && index !==2){
-        console.error("Wrong arg for getColumnValues!")
+        console.error("Wrong arg for getRowIndices!")
         return undefined;
     }
     var row = []
@@ -127,10 +130,21 @@ Grid.prototype.getRowIndices = function (index){
     row.push(index + 2)
     return row;
 }
-Grid.prototype.getColumnIndices = function(index){
+Grid.prototype.getColumnValues = function(index){
 
     if(index !== 0 && index !==1 && index !==2){
-        console.error("Wrong arg for getColumnIndices!")
+        console.error("Wrong arg for getColumnValues!")
+        return undefined;
+    }
+    var i, column = [];
+    for (i = index; i < this.cells.length; i += 3) {
+        column.push(i);
+    }
+    return column;
+};
+Grid.prototype.getColumnIndices = function (index) {
+    if (index !== 0 && index !== 1 && index !== 2) {
+        console.error("Wrong arg for getColumnIndices!");
         return undefined;
     }
     var i, column = [];
@@ -575,4 +589,4 @@ function endGame(who) {
 }
 
 
-*/
+
